@@ -4,18 +4,19 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 ## Features
 
 * This is a pedagogical code for teaching some basics of harmonic lattice dynamics.
-  * Forces and force contstants are calculated by using finite difference from the Tersoff empirical potential
-  * The dynamical matrix at the Gamma point is constructed from the force constants and the phonon density of states (DOS) are calculated from the eigenvalues of the dynamical matrix.
+  * Forces and force contstants are calculated by using finite difference from the Tersoff empirical potential.
+  * The dynamical matrix at the Gamma point is constructed from the force constants and the phonon density of states (DOS) are calculated from the eigenvalues of the dynamical matrix. 
+  * Nowadays no one would calculte the phonon DOS in this way, but I believe this code has pedagogical value. It can be the starting point for building a phonon NEGF (nonequilibrium Green's function) code. I will publish such a code later. 
   
 ## File organizations
 
 * There are two scripts:
   * test_F.m
-  * test_DOS.m
+  * test_D.m
 
 * The "test_F.m" script calls the "find_r", "find_neighbor", and "find_F" functions.
 
-* The "test_DOS.m" script calls the "find_r", "find_neighbor", and "find_D" functions.
+* The "test_D.m" script calls the "find_r", "find_neighbor", and "find_D" functions.
 
 * Both the "find_F" and "find_D" functions call the "find_E" function.
   
@@ -32,7 +33,7 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 
 * Run the "test_F.m" script to test whether the force on each atom is zero. This takes a few seconds. 
   
-* Run the "test_DOS" script to get a phonon DOS plot. This takes a couple of minutes. 
+* Run the "test_D" script to get a phonon DOS plot. This takes a couple of minutes. 
 
 ## Contact
 
