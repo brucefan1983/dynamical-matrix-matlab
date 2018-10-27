@@ -17,7 +17,7 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 
 * The "test_DOS.m" script calls the "find_r", "find_neighbor", and "find_D" functions.
 
-* Both the "find_F" and "find_DOS" functions call the "find_E" function.
+* Both the "find_F" and "find_D" functions call the "find_E" function.
   
 ## Unit system
 
@@ -30,9 +30,9 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 
 ## Running the examples
 
-* Run the "test_F.m" script to test whether the force on each atom is zero. This takes a few seonds. 
+* Run the "test_F.m" script to test whether the force on each atom is zero. This takes a few seconds. 
   
-* Run the "text_DOS" script to get a phonon DOS plot. This takes a couple of minutes. 
+* Run the "test_DOS" script to get a phonon DOS plot. This takes a couple of minutes. 
 
 ## Contact
 
