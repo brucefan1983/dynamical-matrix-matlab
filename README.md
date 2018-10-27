@@ -4,8 +4,8 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 ## Features
 
 * This is a pedagogical code for teaching some basics of harmonic lattice dynamics.
-  * Forces and force contstants are calculated by finite difference from the Tersoff emperical potential
-  * The dynamical matrix at the Gamma point is contructed from the force constants and the phonon density of states (DOS) are calculated from the eigenvalues of the dynamical matrix.
+  * Forces and force contstants are calculated by using finite difference from the Tersoff empirical potential
+  * The dynamical matrix at the Gamma point is constructed from the force constants and the phonon density of states (DOS) are calculated from the eigenvalues of the dynamical matrix.
   
 ## File organizations
 
