@@ -8,16 +8,17 @@ para=[1.8308e3 471.18 2.4799 1.7322 1.1000e-6 0.78734 1.0039e5...
 nx=5;
 ax=5.431;
 [r,L,N]=find_r(nx,ax);
+L_times_pbc=L.*[1 1 1];
 
 % construct the neighbor list
 r_cut=3.0;
 tic;
-[NN,NL]=find_neighbor(N,r,r_cut,L);
+[NN,NL]=find_neighbor(N,r,r_cut,L,L_times_pbc);
 toc;
 
 % calculate the force
 tic;
-F=find_F(N,r,NN,NL,L,para);
+F=find_F(N,r,NN,NL,L,L_times_pbc,para);
 toc;
 
 % check the force
