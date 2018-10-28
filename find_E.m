@@ -16,11 +16,7 @@ one_plus_c2overd2=1.0+c2/d2;
 pi_factor=pi/(r2-r1);
 minus_half_over_n=-0.5/n;
 
-if n1==n2
-    list=[n1,NL(n1,1:NN(n1))];
-else
-    list=[NL(n1,1:NN(n1)),NL(n2,1:NN(n2))];
-end
+list=unique([n1,n2,NL(n1,1:NN(n1)),NL(n2,1:NN(n2))]);
 
 energy = 0;
 for i1=1:length(list)
