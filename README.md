@@ -4,7 +4,7 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 ## Features
 
 * This is a pedagogical code for teaching some basics of harmonic lattice dynamics.
-  * Forces and force contstants are calculated by using finite difference from the Tersoff empirical potential.
+  * Forces and force constants are calculated by using finite difference from the Tersoff empirical potential.
   * The dynamical matrix at the Gamma point is constructed from the force constants and the phonon density of states (DOS) is calculated from the eigenvalues of the dynamical matrix. 
   * Nowadays no one would calculate the phonon DOS in this way, but I believe this code has pedagogical value. It can also serve as a starting point for building a phonon NEGF (nonequilibrium Green's function) code. I will publish such a code later. 
   
