@@ -1,4 +1,4 @@
-function energy=find_E(n1,n2,L,L_times_pbc,r,NN,NL,para)
+function energy=find_E(atom1,atom2,L,L_times_pbc,r,NN,NL,para)
 a=para(1);
 b=para(2);
 lambda=para(3);
@@ -16,7 +16,7 @@ one_plus_c2overd2=1.0+c2/d2;
 pi_factor=pi/(r2-r1);
 minus_half_over_n=-0.5/n;
 
-list=unique([n1,n2,NL(n1,1:NN(n1)),NL(n2,1:NN(n2))]);
+list=unique([atom1,atom2,NL(atom1,1:NN(atom1)),NL(atom2,1:NN(atom2))]);
 
 energy = 0;
 for i1=1:length(list)
