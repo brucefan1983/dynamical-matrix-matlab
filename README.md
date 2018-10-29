@@ -31,9 +31,9 @@ A 200-line MATLAB code for calculating the dynamical matrix using the Tersoff po
 
 ## Running the examples
 
-* Run the "test_F.m" script to test whether the force on each atom is zero. This takes a few seconds. 
+* Run the "test_F.m" script to test whether the force on each atom is zero. This takes about one second. 
   
-* Run the "test_D" script to get a phonon DOS plot. This takes a couple of minutes. 
+* Run the "test_D" script to get a phonon DOS plot. This takes about one minute. 
 
 ## Contact
 
