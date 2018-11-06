@@ -14,6 +14,6 @@ for n1=1:N % N atoms
         ep=find_E(n1,n1,L,L_times_pbc,rp,NN,NL,para);
         em=find_E(n1,n1,L,L_times_pbc,rm,NN,NL,para);
         % use finite difference to obtain the force
-        F(n1,alpha)=(ep-em)*factor;
+        F(n1,alpha)=(em-ep)*factor;
     end
 end
