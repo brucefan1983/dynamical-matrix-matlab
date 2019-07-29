@@ -13,7 +13,7 @@ L_times_pbc=L.*[1 1 1];
 % construct the neighbor list
 r_cut=3.0;
 tic;
-[NN,NL]=find_neighbor(N,r,r_cut,L,L_times_pbc);
+[NN,NL]=find_neighbor(N,r,1.0,r_cut,L,L_times_pbc);
 toc;
 
 % calculate the force
